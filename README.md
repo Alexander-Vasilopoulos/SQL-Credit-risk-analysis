@@ -174,7 +174,7 @@ The score separates good from bad loans well at the low end, but **it is not mon
 
 ## Dashboard (Power BI)
 
-![Dashboard](dashboard.png)!
+![Dashboard](images/dashboard.png)!
 
 ## Limitations
 
