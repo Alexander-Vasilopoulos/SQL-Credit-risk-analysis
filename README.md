@@ -171,3 +171,16 @@ The score separates good from bad loans well at the low end, but **it is not mon
 3. Re-rate the 656 A/B loans with an income share above 40%.
 4. Limit loan size above 15,000 and cap the income share at 30%.
 5. Apply extra scrutiny to renters and borrowers with a prior default.
+
+## Dashboard (Power BI)
+
+![Dashboard](dashboard.png)!
+
+## Limitations
+
+- The dataset has no dates or loan term, so there is no time analysis.
+- Both risk models use rules and weights chosen from exploratory analysis, not a trained statistical model. They are evaluated on the same data they were designed on (no train/test split), so the validation results are optimistic.
+- The points-based score is not monotonic (see validation above) and needs recalibration.
+- ~10% of interest rates and 887 employment lengths are missing and were not imputed.
+- Some outliers (ages, tenure, income) could not be verified without access to the data owner.
+- The 80%+ income-share band contains a single loan, so its default rate is not meaningful.
